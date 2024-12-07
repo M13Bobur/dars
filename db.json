@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": "22ww",
+      "name": "Olma",
+      "price": 100,
+      "categoryID": "uue2"
+    },
+    {
+      "id": "y5ww",
+      "name": "Kalbasa",
+      "price": 200,
+      "categoryID": "t34y"
+    },
+    {
+      "id": "0e9e",
+      "name": "www",
+      "price": "222",
+      "categoryID": "t34y"
+    },
+    {
+      "id": "e381",
+      "name": "ssss",
+      "price": "22222",
+      "categoryID": "uu12"
+    },
+    {
+      "id": "f8fd",
+      "name": "Hurmo",
+      "price": "3333",
+      "categoryID": "uue2"
+    },
+    {
+      "id": "9276",
+      "name": "",
+      "price": "",
+      "categoryID": ""
+    }
+  ],
+  "category": [
+    {
+      "id": "uue2",
+      "name": "Mevalar"
+    },
+    {
+      "id": "uu12",
+      "name": "Ichimlik"
+    },
+    {
+      "id": "t34y",
+      "name": "Gosht mahsulotlari"
+    }
+  ]
+}

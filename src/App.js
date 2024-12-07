@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/home"
+import Table from "./pages/table"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Link to="/">Home</Link> &nbsp;
+        <Link to="/table">Table</Link>
+      </div>
+      <br /><br />
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/table" element={<Table/>}/>
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
+// npx json-server -p 8080 db.json
