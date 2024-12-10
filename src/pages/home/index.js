@@ -21,7 +21,7 @@ function Home() {
             <input type="text" placeholder='name' defaultValue={name} onKeyUp={e=>setName(e.target.value)}/>
             <input type='text' placeholder='age' defaultValue={age} onKeyUp={e=>setAge(e.target.value)}/>
             <button onClick={()=>qoshish()}>Qoshish</button>
-            <br /><br /><br />
+            <br /><br /><br /><br />
             <button onClick={()=>otish("fargona")}>fargona</button>
             <button onClick={()=>otish("andijon")}>andijon</button>
             <button onClick={()=>otish("namangan")}>namangan</button>
