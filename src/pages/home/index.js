@@ -25,6 +25,7 @@ function Home() {
             <button onClick={()=>otish("fargona")}>fargona</button>
             <button onClick={()=>otish("andijon")}>andijon</button>
             <button onClick={()=>otish("namangan")}>namangan</button>
+            <button onClick={()=>otish("toshkent")}>Toshkent</button>
         </div>
     )
 }
