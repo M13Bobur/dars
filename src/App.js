@@ -10,6 +10,7 @@ function App() {
         <Link to="/table">Table</Link>
       </div>
       <br /><br />
+      <div>Hello World</div>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/table" element={<Table/>}/>
