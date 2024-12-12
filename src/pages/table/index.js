@@ -6,7 +6,7 @@ function Table() {
     console.log(loc.state);
     return (
         <div>
-            table
+            Table
         </div>
     )
 }
