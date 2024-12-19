@@ -9,11 +9,19 @@ function Home() {
     
     const qoshish = () => {
         console.log(name, age);
-        store.dispatch({ type:"ADD", value: {name, age} })
+        localStorage.setItem("name", name)
+        localStorage.setItem("age", age)
     }
 
     const otish = (name) => {
         nag("/table", {state: {name: name}})
+    }
+    
+    const korish = () => {
+        var name = localStorage.getItem("name")
+        var age = localStorage.getItem("age")
+
+        alert(name+" "+age)
     }
 
     return (
@@ -22,9 +30,7 @@ function Home() {
             <input type='text' placeholder='age' defaultValue={age} onKeyUp={e=>setAge(e.target.value)}/>
             <button onClick={()=>qoshish()}>Qoshish</button>
             <br /><br />
-            <button onClick={()=>otish("fargona")}>fargona</button>
-            <button onClick={()=>otish("andijon")}>andijon</button>
-            <button onClick={()=>otish("namangan")}>namangan</button>
+            <button onClick={()=>korish()}>korish</button>
         </div>
     )
 }
