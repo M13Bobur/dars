@@ -1,20 +1,23 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/home"
 import Table from "./pages/table"
+import Login from "./pages/login"
 
 function App() {
+  const token = localStorage.getItem("token")
   return (
     <div className="App">
-      <div>
-        <Link to="/">Home</Link> &nbsp;
-        <Link to="/table">Table</Link>
-      </div>
-      <br /><br />
-      <div>Hello World</div>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/table" element={<Table/>}/>
-      </Routes>
+      {token == null ? <Login /> : <div>
+        <div>
+          <Link to="/">Home</Link> &nbsp;
+          <Link to="/table">Table</Link>
+        </div>
+        <br /><br />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/table" element={<Table />} />
+        </Routes>
+      </div>}
     </div>
   );
 }
